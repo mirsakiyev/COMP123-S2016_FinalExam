@@ -14,6 +14,7 @@ namespace COMP123_S2016_FinalExam
 {
     public partial class AbilityGeneratorForm : Form
     {
+        public GenerateNameForm previousForm;
         // private Instance Object
         private Random _random;
 
@@ -181,6 +182,15 @@ namespace COMP123_S2016_FinalExam
 
             // Step 5 - Show the next form
             raceAndClassForm.Show();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            // Step 1 - show the parent form
+            this.previousForm.Show();
+
+            // Step 2 - close this form
+            this.Close();
         }
     }
 }

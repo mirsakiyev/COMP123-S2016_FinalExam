@@ -19,6 +19,7 @@ namespace COMP123_S2016_FinalExam
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            // setting up the timer
             try
             {
                 progressBar.Increment(1);
