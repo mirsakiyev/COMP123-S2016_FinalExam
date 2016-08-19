@@ -29,5 +29,17 @@ namespace COMP123_S2016_FinalExam
             Application.Run(new SplashScreen());
         }
 
+        public void GenerateNames()
+        {
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(1,51);
+
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateNames();
+            
+        }
     }
 }
