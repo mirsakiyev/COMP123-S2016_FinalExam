@@ -19,11 +19,19 @@ namespace COMP123_S2016_FinalExam
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            progressBar.Increment(1);
-            if (progressBar.Value == 100)
+            try
             {
-                timer.Stop();
+                progressBar.Increment(1);
+                if (progressBar.Value == 100)
+                {
+                    timer.Stop();
+                }
             }
+            catch (Exception)
+            {
+
+                throw;
+            }           
         }
     }
 }

@@ -41,9 +41,9 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(143, 475);
+            this.progressBar.Location = new System.Drawing.Point(107, 255);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(581, 23);
+            this.progressBar.Size = new System.Drawing.Size(373, 24);
             this.progressBar.TabIndex = 0;
             // 
             // SplashScreen
@@ -52,10 +52,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::COMP123_S2016_FinalExam.Properties.Resources.splashSceen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(858, 547);
+            this.ClientSize = new System.Drawing.Size(600, 320);
+            this.ControlBox = false;
             this.Controls.Add(this.progressBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SplashScreen";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
