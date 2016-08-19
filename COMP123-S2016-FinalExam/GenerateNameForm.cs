@@ -34,17 +34,16 @@ namespace COMP123_S2016_FinalExam
         {            
                 // generating a random number (1-50)
                 Random rnd = new Random();
-                int randomNumber = rnd.Next(1, 51); 
-
-                Character character = new Character();
+            Character character = Program.character;
+            int randomNumber = rnd.Next(1, 51); 
+                
 
             FirstNameTextBox.Text = string.Empty;
 
             foreach (string firstName in FirstNameListBox.SelectedItems)
             {
                 FirstNameTextBox.Text = firstName.ToString();
-                character.FirstName = firstName.ToString();
-                
+                character.FirstName = firstName.ToString();               
             }
                 
         }
@@ -52,8 +51,7 @@ namespace COMP123_S2016_FinalExam
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             // calling generate names method
-            GenerateNames();
-            
+            GenerateNames();        
         }
 
         private void NextButton_Click(object sender, EventArgs e)
